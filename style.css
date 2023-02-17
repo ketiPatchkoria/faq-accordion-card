@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    font-size:62.5%;
+}
+body {
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:1.3rem;
+    line-height: 1.6rem;
+    color: #4B4C5F;
+}
+
+.container {
+    width:100%;
+    max-width: 32.7rem;
+    height:53.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0rem 5rem 5rem -2rem rgba(53, 18, 122, 0.497159);
+    border-radius: 2.3rem;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right 50% top -2%;
+    background-blend-mode: normal;
+    padding: 0 2.5rem;
+    top:57%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-mobile {
+    width: 23.6rem;
+    margin-top:-11rem; 
+}
+
+.text-div {
+    margin-top:5rem;
+
+}
+
+.header{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #1E1F36;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.standart-div {
+    display:flex;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answers {
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.line {
+    height: 0.1rem;
+    background-color: #E8E8EA;
+    margin-top: 1.8rem;
+    margin-bottom: 1.9rem;
+}
+
+.hidden {
+    display:none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+}
+.bold {
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .container {
+        width:100%;
+        max-width: 92rem;
+        height:50.9rem;
+        top:50%;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: initial;
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-size: 96.4rem auto;
+        background-position: left -58rem top -30rem;
+        padding:0;
+        /* overflow: hidden; */
+    }
+    .img-mobile {
+        display:none;
+    }
+    .img-desktop {
+        display: flex;
+        align-items: center;
+        margin-left: -10%;
+        position: relative;
+    }
+
+    .img-woman {
+        width:47.1rem;
+
+    }
+    .box {
+        position:absolute;
+        left:0%;
+        top:45%;
+        z-index: 1;
+    }
+
+    .text-div {
+        width:35rem;
+        margin-top:6.5rem;
+        margin-right: 9.5rem;
+        margin-bottom: 8.3rem;
+    }
+    .header {
+        text-align:left;
+    }
+}
+
+/* on hover */
+.questions:hover {
+    cursor: pointer;
+    color: #F47B56;
+}
+
+.arrow-icon {
+    cursor: pointer;
+}
